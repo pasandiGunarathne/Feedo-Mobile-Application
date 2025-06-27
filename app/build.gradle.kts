@@ -36,8 +36,16 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
 }
+
+android {
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
 
 dependencies {
     // Your existing dependencies

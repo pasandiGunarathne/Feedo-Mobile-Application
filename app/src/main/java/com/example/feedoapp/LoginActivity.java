@@ -103,7 +103,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
-                startActivity(new Intent(this, HomeActivity.class)); // Change to your home activity
+                startActivity(new Intent(this, HomeFragment.class)); // Change to your home activity
                 finish();
             } else {
                 Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show();
@@ -131,7 +131,7 @@ public class LoginActivity extends AppCompatActivity {
         AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
         mAuth.signInWithCredential(credential).addOnCompleteListener(this, task -> {
             if (task.isSuccessful()) {
-                startActivity(new Intent(this, HomeActivity.class));
+                startActivity(new Intent(this, HomeFragment.class));
                 finish();
             } else {
                 Toast.makeText(this, "Google login failed", Toast.LENGTH_SHORT).show();
@@ -164,7 +164,7 @@ public class LoginActivity extends AppCompatActivity {
         AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
         mAuth.signInWithCredential(credential).addOnCompleteListener(this, task -> {
             if (task.isSuccessful()) {
-                startActivity(new Intent(this, HomeActivity.class));
+                startActivity(new Intent(this, HomeFragment.class));
                 finish();
             } else {
                 Toast.makeText(this, "Facebook login failed", Toast.LENGTH_SHORT).show();
