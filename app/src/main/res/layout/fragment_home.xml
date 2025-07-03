@@ -26,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView17"
             android:layout_width="35dp"
             android:layout_height="35dp"
@@ -36,7 +36,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/pp" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView21"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -46,7 +46,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/dinner" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView19"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -56,7 +56,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/breakfast" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView18"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -66,7 +66,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/beverages" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView20"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -76,7 +76,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/dessert" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView22"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -448,18 +448,18 @@
                     android:layout_marginStart="11dp"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="209dp"
                         android:layout_height="123dp"
                         android:src="@drawable/deals1"
                         android:layout_marginStart="23dp"/>
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="209dp"
                         android:layout_height="123dp"
                         android:src="@drawable/deals2" />
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="209dp"
                         android:layout_height="123dp"
                         android:src="@drawable/deals1" /> <!-- Replace or remove if not needed -->
@@ -497,15 +497,15 @@
                     android:orientation="horizontal"
                     android:layout_marginStart="11dp">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="133dp"
                         android:layout_height="171dp"
                         android:src="@drawable/popular_meals"/>
-                    <ImageView
+                    <ImageButton
                         android:layout_width="133dp"
                         android:layout_height="171dp"
                         android:src="@drawable/popular_meals"/>
-                    <ImageView
+                    <ImageButton
                         android:layout_width="133dp"
                         android:layout_height="171dp"
                         android:src="@drawable/popular_meals"/>

@@ -3,12 +3,508 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".CartFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="57dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/location" />
+
     <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="55dp"
+        android:text="172/2A,Kandy Road,\nPasyala."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="7dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/light_black"/>
+
+    <ImageButton
+        android:id="@+id/imageView17"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="343dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pp" />
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        tools:context=".CartActivity"
+        android:layout_marginTop="177dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="357.12dp"
+                    android:layout_height="130sp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/frame_outline">
+
+                    <ImageView
+                        android:layout_width="137.73dp"
+                        android:layout_height="109dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/cartcake" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160sp"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Strawberry cheesecake slice\nwith a fresh strawberry on top"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160sp"
+                        android:layout_marginTop="50dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Rs. 520.00"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="65dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Medium"
+                        android:textSize="11sp" />
+
+                    <FrameLayout
+                        android:layout_width="51.19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="95dp"
+                        android:background="@drawable/frame_outline">
+
+                        <ImageButton
+                            android:layout_width="14.63dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/subtract" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@null"
+                            android:fontFamily="@font/open_sans"
+                            android:text="1"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:layout_width="14.63dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/plus" />
+                    </FrameLayout>
+
+                    <ImageButton
+                        android:layout_width="69.47dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/choose"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginStart="251dp"/>
+
+                    <ImageButton
+                        android:layout_width="69.47dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/delete"
+                        android:layout_marginTop="95dp"
+                        android:layout_marginStart="251dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:layout_marginStart="266dp"
+                        android:layout_marginTop="95dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose"
+                        android:layout_marginStart="262dp"
+                        android:layout_marginTop="70dp"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="357.12dp"
+                    android:layout_height="130sp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/frame_outline">
+
+                    <ImageView
+                        android:layout_width="137.73dp"
+                        android:layout_height="109dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/cartcake" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160sp"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Strawberry cheesecake slice\nwith a fresh strawberry on top"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160sp"
+                        android:layout_marginTop="50dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Rs. 520.00"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="65dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Medium"
+                        android:textSize="11sp" />
+
+                    <FrameLayout
+                        android:layout_width="51.19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="95dp"
+                        android:background="@drawable/frame_outline">
+
+                        <ImageButton
+                            android:layout_width="14.63dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/subtract" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@null"
+                            android:fontFamily="@font/open_sans"
+                            android:text="1"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:layout_width="14.63dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/plus" />
+                    </FrameLayout>
+
+                    <ImageButton
+                        android:layout_width="69.47dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/choose"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginStart="251dp"/>
+
+                    <ImageButton
+                        android:layout_width="69.47dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/delete"
+                        android:layout_marginTop="95dp"
+                        android:layout_marginStart="251dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:layout_marginStart="266dp"
+                        android:layout_marginTop="95dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose"
+                        android:layout_marginStart="262dp"
+                        android:layout_marginTop="70dp"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="357.12dp"
+                    android:layout_height="130sp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/frame_outline">
+
+                    <ImageView
+                        android:layout_width="137.73dp"
+                        android:layout_height="109dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/cartcake" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160sp"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Strawberry cheesecake slice\nwith a fresh strawberry on top"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160sp"
+                        android:layout_marginTop="50dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Rs. 520.00"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="65dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Medium"
+                        android:textSize="11sp" />
+
+                    <FrameLayout
+                        android:layout_width="51.19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="95dp"
+                        android:background="@drawable/frame_outline">
+
+                        <ImageButton
+                            android:layout_width="14.63dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/subtract" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@null"
+                            android:fontFamily="@font/open_sans"
+                            android:text="1"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:layout_width="14.63dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/plus" />
+                    </FrameLayout>
+
+                    <ImageButton
+                        android:layout_width="69.47dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/choose"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginStart="251dp"/>
+
+                    <ImageButton
+                        android:layout_width="69.47dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/delete"
+                        android:layout_marginTop="95dp"
+                        android:layout_marginStart="251dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:layout_marginStart="266dp"
+                        android:layout_marginTop="95dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose"
+                        android:layout_marginStart="262dp"
+                        android:layout_marginTop="70dp"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="357.12dp"
+                    android:layout_height="130sp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/frame_outline">
+
+                    <ImageView
+                        android:layout_width="137.73dp"
+                        android:layout_height="109dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/cartcake" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160sp"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Strawberry cheesecake slice\nwith a fresh strawberry on top"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160sp"
+                        android:layout_marginTop="50dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Rs. 520.00"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="65dp"
+                        android:background="@null"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Medium"
+                        android:textSize="11sp" />
+
+                    <FrameLayout
+                        android:layout_width="51.19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="95dp"
+                        android:background="@drawable/frame_outline">
+
+                        <ImageButton
+                            android:layout_width="14.63dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/subtract" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@null"
+                            android:fontFamily="@font/open_sans"
+                            android:text="1"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:layout_width="14.63dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/plus" />
+                    </FrameLayout>
+
+                    <ImageButton
+                        android:layout_width="69.47dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/choose"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginStart="251dp"/>
+
+                    <ImageButton
+                        android:layout_width="69.47dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/delete"
+                        android:layout_marginTop="95dp"
+                        android:layout_marginStart="251dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:layout_marginStart="266dp"
+                        android:layout_marginTop="95dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose"
+                        android:layout_marginStart="262dp"
+                        android:layout_marginTop="70dp"/>
+
+                </FrameLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
 
 </FrameLayout>
